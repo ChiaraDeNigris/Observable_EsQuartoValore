@@ -11,6 +11,7 @@ const tick = interval(100);
 var conta = 0;
 //Costruisco l'observable
 const temp = new Observable(subscriber =>
+
   tick.subscribe({
     next() {
       while (conta < 4) {
@@ -19,8 +20,11 @@ const temp = new Observable(subscriber =>
           .then(data => subscriber.next(data.main.temp));
         conta += 1;
       }
+      subscriber.complete();
     }
+    
   })
+  
 );
 // Due subscriber
 temp.subscribe({
