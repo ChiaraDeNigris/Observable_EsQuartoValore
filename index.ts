@@ -1,7 +1,7 @@
 import { ajax } from "rxjs/ajax";
 import { Observable, interval } from "rxjs";
 
-const apiKey = "223e36e264fd262c0dd5e26c63edf39f";
+const apiKey = "bbef17cfc62d7482bfb061d5bca00a6a";
 const URL =
   "https://api.openweathermap.org/data/2.5/weather?APPID=" +
   apiKey +
