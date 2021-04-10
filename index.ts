@@ -26,8 +26,5 @@ const temp = new Observable(subscriber =>
 temp.subscribe({
   next(x) {
     document.getElementById("output").innerHTML += x + "<br>";
-  }/*,
-  complete() {
-    document.getElementById("outputC").innerHTML += "ok" + "<br>";
-  }*/
+  }
 });
